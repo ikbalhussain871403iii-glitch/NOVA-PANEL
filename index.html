@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA PANEL</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #080b14;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.panel {
+  max-width: 420px;
+  margin: 30px auto;
+  background: #141a29;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #29344b;
+  box-shadow: 0 0 25px #152b55;
+}
+h1 {
+  text-align: center;
+  color: #35d9ff;
+}
+.subtitle {
+  text-align: center;
+  color: #8995aa;
+}
+.section {
+  background: #202a3d;
+  padding: 16px;
+  margin-top: 18px;
+  border-radius: 12px;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+button {
+  background: #087cff;
+  border: none;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+}
+input {
+  accent-color: #20cfff;
+}
+.footer {
+  text-align: center;
+  color: #718098;
+  margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+<div class="panel">
+
+<h1>⚡ NOVA PANEL</h1>
+<p class="subtitle">CUSTOM GAMING DASHBOARD</p>
+
+<div class="section">
+<h3>Dashboard</h3>
+<p>Welcome to NOVA PANEL</p>
+<p>Status: <span id="status">Ready</span></p>
+</div>
+
+<div class="section">
+<h3>Visual Settings</h3>
+
+<div class="setting">
+<span>Dark Theme</span>
+<button onclick="toggleTheme()">ON / OFF</button>
+</div>
+
+<div class="setting">
+<span>Glow Effect</span>
+<input type="checkbox" checked>
+</div>
+
+<div class="setting">
+<span>Animation</span>
+<input type="checkbox" checked>
+</div>
+</div>
+
+<div class="section">
+<h3>Display Control</h3>
+<p>Brightness</p>
+<input type="range" min="0" max="100" value="80">
+<p>Panel Size</p>
+<input type="range" min="50" max="100" value="90">
+</div>
+
+<div class="footer">
+NOVA PANEL © 2026
+</div>
+
+</div>
+
+<script>
+function toggleTheme() {
+ document.body.style.background =
+ document.body.style.background === "white"
+ ? "#080b14" : "white";
+}
+</script>
+</body>
+</html>
